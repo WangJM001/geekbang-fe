@@ -1,0 +1,64 @@
+.app {
+  display: flex;
+}
+
+header {
+  padding: 16px;
+  text-align: right;
+}
+
+.editor,
+.preview {
+  width: 50%;
+  flex: 1;
+  position: relative;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh);
+  background-color: #1e1e1e;
+}
+
+#editor-container {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+.error {
+  background: #1e1e1e;
+  display: none;
+  color: red;
+  width: 100%;
+  height: 100%;
+  padding: 48px 24px 24px 24px;
+}
+
+#preview-ifm {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.3);
+  align-items: center;
+  justify-content: center;
+}
+
+.mask > .loading {
+  padding: 24px 48px;
+  font-size: 22px;
+  background-color: rgba(30, 30, 30, 0.8);
+  color: #fff;
+  border-radius: 4px;
+}
