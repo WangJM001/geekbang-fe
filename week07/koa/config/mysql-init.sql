@@ -1,0 +1,7 @@
+CREATE DATABASE IF NOT EXISTS `todos`;
+USE `todos`;
+CREATE TABLE IF NOT EXISTS `todos` (
+   `id` INT(11) NOT NULL DEFAULT '0',
+   `name` VARCHAR(16) NOT NULL DEFAULT '0',
+   `datetime` VARCHAR(50) NOT NULL
+);
